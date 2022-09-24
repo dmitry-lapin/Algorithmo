@@ -2,66 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Algorithmo!</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/scss/main.scss">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algorithmo!</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/scss/main.scss">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg p-3 blurred">
-        <div class="d-flex justify-content-end">
-            <div class="">
-          <a class="navbar-brand ps-5 text-white fs-2" href="#">Algorithmo!</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-          <div class="collapse navbar-collapse" id="navbarText">
-            
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Pricing</a>
-              </li>
-            </ul>
-            <div class="p-2">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link text-white" aria-current="page" href="#">Sign in</a>
-                    </li>
-                    <li class="nav-item align-self-center">
-                      <button type="button" class="btn btn-outline-light p-2 px-4 py-1">Register</button>
-                    </li>
-                  </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    
-    <div class="container mt-2 ">
-        <div class="row mx-5 rounded blurred text-white">
-            <div class="col mx-1"><p>text</p></div> 
-            <div class="col mx-1"></div> 
-        </div>
+  
+  <!-- Navbar-->
+<nav class="navbar navbar-expand-lg blurred">
+  <div class="container-fluid justify-content-between p-2 py-3">
+    <!-- Left elements -->
+    <div class="d-flex ms-5">
+      <!-- Brand -->
+      <a class="navbar-brand " href="#">
+        <img src="img/logo.png" alt="Logo"  class="d-inline-block ">
+      </a>
+      <a class="align-middle text-light fw-bold fs-4 navbar-brand lh-2" href="#">Algorithm <br>ME !</a>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    <script type="module" src="assets/js/main.js"></script>
+    <!-- Left elements -->
+
+    <!-- Center elements -->
+    <ul class="navbar-nav flex-row d-none d-md-flex" id="middle_menu_items">
+      <li class="nav-item d-inline-flex">
+        <a href="#" class="nav-link text-light"><i class="bi bi-building text-light fs-4 align-self-center"></i></a>
+      </li>
+      <li class="nav-item d-inline-flex">
+        <a href="#" class="nav-link text-light"><i class="bi bi-list text-light fs-4 align-self-center"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link text-light"><i class="bi bi-chat text-light fs-4 align-self-center"></i></a>
+      </li>
+    </ul>
+    <!-- Center elements -->
+
+    <!-- Right elements -->
+    <ul class="navbar-nav flex-row me-5">
+      <li class="nav-item">
+        <a class="nav-link text-light  fw-light" href="#">Sign In</a>
+      </li>
+      <li class="nav-item align-self-center">
+        <button type="button" class="btn py-1 btn-outline-light ">Register</button>
+      </li>
+    </ul>
+    <!-- Right elements -->
+  </div>
+</nav>
+  
+  <div class="container mt-2 ">
+    <div class="row mx-5 rounded blurred text-white">
+      <div class="col mx-1"><p>text</p></div> 
+      <div class="col mx-1"></div> 
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
