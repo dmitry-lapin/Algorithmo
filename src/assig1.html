@@ -97,6 +97,42 @@
         </div>
       </div>
 
+      <div class="modal fade" id="login_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row p-4">
+                    <div class="col-7 m-0">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-xl-5">
+                                <input type="text" class="form-control" placeholder="Date" aria-label="Date">
+                            </div>
+                            <div class="col-12 col-md-12 col-xl-5">
+                                <input type="text" class="form-control" placeholder="Time" aria-label="Time">
+                            </div>
+                        </div>                          
+                    </div>
+                    <div class="col-4 m-0 align-self-center">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Default checkbox
+                            </label>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <nav class="navbar navbar-expand-lg bg-light" style="height: 60px; background-color: #4c0bce !important;">
         <div class="container-fluid">
@@ -107,6 +143,9 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
             </ul>
+          </div>
+          <a class="text-white" data-bs-toggle="modal" href="#" data-bs-target="#login_modal">Login</a>
+
           </div>
         </div>
       </nav>
