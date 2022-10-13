@@ -25,10 +25,14 @@ body {
     .navbar {
         border-bottom: 1px $border-setup;
         
-        #start-project-btn {
-            color: rgb(67, 127, 255) !important;
-        }
-        
+        @media screen and (max-width: 992px) {
+            .nav-item:hover:not(#start-project-button) {
+                transition: 0.25s linear;
+                border-right: 1.5px solid white;
+                border-left: 1.5px solid white;
+            }
+          }
+
         
     }
 

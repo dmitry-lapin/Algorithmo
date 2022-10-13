@@ -12016,8 +12016,12 @@ body .navbar {
   border-bottom: 1px solid #4e4e4e;
 }
 
-body .navbar #start-project-btn {
-  color: #437fff !important;
+@media screen and (max-width: 992px) {
+  body .navbar .nav-item:hover:not(#start-project-button) {
+    border-left: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
+    transition: all .25s linear;
+  }
 }
 
 body main {

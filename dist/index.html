@@ -21,32 +21,38 @@
 
 <body>
   <nav class="navbar navbar-expand-lg bg-transparent">
-    <div class="container-fluid container px-5 justify-content-around">
+    <div class="container-fluid container px-5 ">
       <a class="navbar-brand fw-semibold d-flex align-items-center" href="#">
         <img src="/icon.323200e9.png" alt="Logo" class="mx-2" height="50" width="50">
         Lapin<br> Dmitry</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse justify-content-around mt-3" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Benefits</a>
+        <li class="nav-item d-inline-flex justify-content-center">
+          <i class="bi bi-patch-plus text-white d-lg-none me-1 align-self-center"></i>
+          <a class="nav-link" href="#">Benefits </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About me</a>
+        <li class="nav-item d-inline-flex justify-content-center">
+          <i class="bi bi-person-circle text-white d-lg-none me-1 align-self-center"></i>
+          <a class="nav-link" href="#">About me </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+        <li class="nav-item d-inline-flex justify-content-center">
+          <i class="bi bi-chat-fill text-white d-lg-none me-1 align-self-center"></i>
+          <a class="nav-link" href="#">Contact </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+        <li class="nav-item d-inline-flex justify-content-center">
+          <i class="bi bi-patch-plus text-white d-lg-none me-1 align-self-center"></i>
+          <a class="nav-link" href="#">Pricing </a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item cta-btn">
-          <button type="button" class="btn btn-outline-light py-2 border-0 fw-semibold">Start a project > </button>
+        <li class="nav-item cta-btn d-flex justify-content-center my-4" id="start-project-button">
+          <button type="button" class="btn btn-outline-light py-2 border-0 fw-semibold"><span class="fw-normal"><</span> <i class="bi bi-bricks me-1"></i>Start a project <span class="fw-normal">/></span></button>
         </li>
       </ul>
+    </div>
     </div>
   </nav>
 
