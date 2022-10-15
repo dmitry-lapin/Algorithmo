@@ -2,7 +2,7 @@
 @import "~bootstrap/scss/bootstrap";
 
 //variables scss
-$transit_med: 0.33s;
+$transist: 0.25s;
 $text-color: white;
 $border-setup: solid rgb(78, 78, 78); 
 
@@ -12,13 +12,13 @@ $border-setup: solid rgb(78, 78, 78);
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     background-attachment: fixed;
     background-color: #171d20;
     font-family: 'Montserrat', sans-serif;
-
+    
     a {
         color: $text-color !important;
     }
@@ -27,17 +27,41 @@ body {
         
         @media screen and (max-width: 992px) {
             .nav-item:hover:not(#start-project-button) {
-                transition: 0.25s linear;
+                transition: $transist linear;
                 border-right: 1.5px solid white;
                 border-left: 1.5px solid white;
+                
             }
-          }
-
+        }
         
     }
-
+    
     main {
         background-color: rgb(52, 65, 71, 0.5);
-        //@include border;
+        @include border;
+        
+        #social_column {
+            .nav-item {
+                border-radius: 5px !important;              
+            }
+            
+            .nav-item:hover {
+                transition: $transist;
+                background-color: white;
+                .bi-github {
+                    color: #000;
+                }
+                .bi-telegram {
+                    color: #0088cc;
+                }
+                .bi-envelope-fill {
+                    color: #fec685;
+                }
+                .bi-linkedin {
+                    color: #0077B5;
+                }
+            }
+            
+        }
     }
 }

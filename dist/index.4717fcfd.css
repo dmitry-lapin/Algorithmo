@@ -12026,6 +12026,32 @@ body .navbar {
 
 body main {
   background-color: #34414780;
+  border: 1px solid #4e4e4e;
+}
+
+body main #social_column .nav-item {
+  border-radius: 5px !important;
+}
+
+body main #social_column .nav-item:hover {
+  background-color: #fff;
+  transition: all .25s;
+}
+
+body main #social_column .nav-item:hover .bi-github {
+  color: #000;
+}
+
+body main #social_column .nav-item:hover .bi-telegram {
+  color: #08c;
+}
+
+body main #social_column .nav-item:hover .bi-envelope-fill {
+  color: #fec685;
+}
+
+body main #social_column .nav-item:hover .bi-linkedin {
+  color: #0077b5;
 }
 
 /*# sourceMappingURL=index.4717fcfd.css.map */
