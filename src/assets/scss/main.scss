@@ -26,12 +26,21 @@ body {
         border-bottom: 1px $border-setup;
         
         @media screen and (max-width: 992px) {
-            .nav-item:hover:not(#start-project-button) {
-                transition: $transist linear;
-                border-right: 1.5px solid white;
-                border-left: 1.5px solid white;
-                
+            
+            .nav-item {
+                .nav-link {
+                    font-size: 2em;
+                    font-weight: bold;
+                    
+                }
+
+                i {
+                    font-size: 25px;
+                }
+
+               
             }
+            
         }
         
     }
@@ -55,7 +64,7 @@ body {
                     color: #0088cc;
                 }
                 .bi-envelope-fill {
-                    color: #fec685;
+                    color: #f7ab55;
                 }
                 .bi-linkedin {
                     color: #0077B5;

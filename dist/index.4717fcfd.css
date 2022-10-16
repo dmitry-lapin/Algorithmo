@@ -12017,10 +12017,13 @@ body .navbar {
 }
 
 @media screen and (max-width: 992px) {
-  body .navbar .nav-item:hover:not(#start-project-button) {
-    border-left: 1.5px solid #fff;
-    border-right: 1.5px solid #fff;
-    transition: all .25s linear;
+  body .navbar .nav-item .nav-link {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  body .navbar .nav-item i {
+    font-size: 25px;
   }
 }
 
@@ -12047,7 +12050,7 @@ body main #social_column .nav-item:hover .bi-telegram {
 }
 
 body main #social_column .nav-item:hover .bi-envelope-fill {
-  color: #fec685;
+  color: #f7ab55;
 }
 
 body main #social_column .nav-item:hover .bi-linkedin {
